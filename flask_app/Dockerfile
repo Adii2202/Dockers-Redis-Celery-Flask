@@ -9,6 +9,6 @@ WORKDIR /flask_app
 
 # we exposed the ports in the docker-compose.yaml so here there's no need to do that
 
-ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
 
 CMD ["flask", "run", "--host=0.0.0.0"]
